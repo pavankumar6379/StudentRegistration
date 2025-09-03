@@ -8,7 +8,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Load JWT settings from configuration
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var jwtKey = jwtSection["SecretKey"];
 var issuer = jwtSection["Issuer"];
