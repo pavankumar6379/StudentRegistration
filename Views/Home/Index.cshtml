@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<div class="text-center my-5">
+    <h1 class="display-3 text-primary">Welcome to the Student Registration Portal</h1>
+    <p class="lead">Easily manage student profiles, explore featured courses, and stay connected.</p>
+    @* <a href="/Home" class="btn btn-success btn-lg mt-3">Get Started</a> *@
+</div>
+
+<div class="container">
+    <!-- Info Cards Row -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- About Us Card -->
+        <div class="col">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">About Us</h4>
+                </div>
+                <div class="card-body">
+                    <p>Welcome to the Student Registration Portal! This platform enables students, teachers, and admins to manage student information effortlessly using a user-friendly interface.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Edits Card -->
+        <div class="col">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">Latest Updates</h4>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Student profile management features added.</li>
+                        <li>Enhanced security for login and authentication.</li>
+                        <li>New admin dashboard for improved control.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links Card -->
+        <div class="col">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-secondary text-white">
+                    <h4 class="mb-0">Quick Links</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="http://localhost:5066">Student Details</a></li>
+                        <li><a href="/Auth/Login">Login</a></li>
+                        @* <li><a href="/Auth/Register">Register</a></li> *@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Course Section -->
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-warning text-dark">
+                    <h4 class="mb-0">Featured Course</h4>
+                </div>
+                <div class="card-body">
+                    <p>Explore our top-rated courses in Web Development, Data Science, and more. Stay ahead with cutting-edge content and practical projects.</p>
+                    <a href="/Home" class="btn btn-outline-dark">Browse Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">Contact Us</h4>
+                </div>
+                <div class="card-body">
+                    <p>Have questions or need help? Reach out to us:</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> <a href="mailto:support@studentregistration.com">support@studentregistration.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+11234567890">123-456-7890</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

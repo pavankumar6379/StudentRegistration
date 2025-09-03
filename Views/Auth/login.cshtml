@@ -1,0 +1,44 @@
+﻿@model StudentRegistration.Models.Login.LoginDto
+
+@{
+    ViewBag.Title = "Login";
+}
+  
+<!-- Login Form Container -->
+<div class="d-flex justify-content-center align-items-center" style="min-height: 50vh; ">
+    <div style="width: 350px;">
+        <h2 class="text-center">Login</h2>
+
+        <form asp-action="Login" method="post">
+            <div class="form-group">
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </div>
+
+            @if (ViewBag.Error != null)
+            {
+                <p class="text-danger text-center mt-3">@ViewBag.Error</p>
+            }
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.0.0/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+

@@ -1,0 +1,39 @@
+﻿@model StudentRegistration.Models.StudentModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-4 mb-4">
+    <div class="bg-light p-4 rounded shadow-sm" style="max-width: 500px; margin: auto;">
+        <h2 class="mb-4 text-center text-success">Student Details</h2>
+
+        <h5 class="mb-3 text-center text-muted">Student Information</h5>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-5 fw-semibold">@Html.DisplayNameFor(model => model.FullName)</dt>
+            <dd class="col-sm-7">@Html.DisplayFor(model => model.FullName)</dd>
+
+            <dt class="col-sm-5 fw-semibold">@Html.DisplayNameFor(model => model.Age)</dt>
+            <dd class="col-sm-7">@Html.DisplayFor(model => model.Age)</dd>
+
+            <dt class="col-sm-5 fw-semibold">@Html.DisplayNameFor(model => model.Email)</dt>
+            <dd class="col-sm-7">@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt class="col-sm-5 fw-semibold">@Html.DisplayNameFor(model => model.Address)</dt>
+            <dd class="col-sm-7">@Html.DisplayFor(model => model.Address)</dd>
+
+            <dt class="col-sm-5 fw-semibold">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+            <dd class="col-sm-7">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+            <dt class="col-sm-5 fw-semibold">@Html.DisplayNameFor(model => model.EnrollmentDate)</dt>
+            <dd class="col-sm-7">@Html.DisplayFor(model => model.EnrollmentDate)</dd>
+        </dl>
+
+        <div class="mt-4 text-center">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary me-2">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

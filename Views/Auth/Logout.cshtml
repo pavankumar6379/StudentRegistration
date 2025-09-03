@@ -1,0 +1,4 @@
+﻿<form asp-action="Logout" asp-controller="Auth" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit">Logout</button>
+</form>
